@@ -1,5 +1,5 @@
 // src/App.jsx
-import Navbar from './components/layout/Navbar';
+import Navbar from './components/layout/navbar';
 import HeroSlider from './components/home/HeroSlider';
 import CategorySlider from './components/home/CategorySlider';
 import TrendingProducts from './components/home/TrendingProducts';
