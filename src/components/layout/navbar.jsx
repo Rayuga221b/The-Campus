@@ -41,7 +41,7 @@ const Navbar = () => {
       {/* 1. Left Section: Logo */}
       <div className="flex items-center gap-2">
         <Hexagon size={28} className="fill-black stroke-none" />
-        <span className="text-xl font-bold tracking-tight text-black">GiftHaven</span>
+        <span className="text-xl font-bold tracking-tight text-black">The Campus</span>
       </div>
 
       {/* 2. Middle Section: Navigation Links */}
