@@ -4,12 +4,14 @@ import { trendingGifts } from '../../data/trendingGifts';
 
 const TrendingProducts = () => {
   return (
-    <section className="py-12 bg-[#faf9f6]"> {/* Warm off-white background */}
+    // CHANGE 1: Background is now a soft Green-to-White gradient
+    <section className="py-16 bg-gradient-to-b from-[#f0fdf4] to-[#ffffff]">
       <div className="max-w-[1400px] mx-auto px-4 md:px-8">
         
         {/* Section Header */}
         <div className="mb-10">
-          <span className="text-orange-600 font-bold tracking-wider text-xs uppercase mb-2 block">
+          {/* CHANGE 2: Text color changed from Orange to Green */}
+          <span className="text-green-600 font-bold tracking-wider text-xs uppercase mb-2 block">
             Best Selling
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 font-serif">
@@ -22,7 +24,8 @@ const TrendingProducts = () => {
           {trendingGifts.map((product) => (
             <div 
               key={product.id} 
-              className="bg-white rounded-2xl p-4 shadow-sm hover:shadow-xl hover:shadow-orange-100/50 transition-all duration-300 group border border-gray-100"
+              // CHANGE 3: Hover shadow is now a soft Green glow
+              className="bg-white rounded-2xl p-4 shadow-sm hover:shadow-xl hover:shadow-green-100/50 transition-all duration-300 group border border-gray-100"
             >
               {/* Image Container */}
               <div className="relative h-64 rounded-xl overflow-hidden mb-5 bg-gray-100">
@@ -38,7 +41,7 @@ const TrendingProducts = () => {
                 <h3 className="text-lg font-bold text-gray-900 leading-tight">
                   {product.name}
                 </h3>
-                {/* Price Tag (Pill shape like screenshot) */}
+                {/* Price Tag */}
                 <span className="bg-gray-100 text-gray-900 text-sm font-bold px-3 py-1 rounded-full">
                   {product.price}
                 </span>
@@ -54,13 +57,15 @@ const TrendingProducts = () => {
 
               {/* Action Buttons Row */}
               <div className="flex items-center gap-3 mt-auto">
-                {/* Cart Button (Square icon) */}
-                <button className="p-3 rounded-xl border border-gray-200 text-gray-600 hover:bg-black hover:text-white hover:border-black transition-colors">
+                {/* Cart Button */}
+                {/* CHANGE 4: Hover turns button Solid Green */}
+                <button className="p-3 rounded-xl border border-gray-200 text-gray-600 hover:bg-green-600 hover:text-white hover:border-green-600 transition-colors">
                   <ShoppingCart size={20} />
                 </button>
 
-                {/* View Details Button (Wide) */}
-                <button className="flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-xl border border-gray-200 text-sm font-bold text-gray-900 hover:bg-gray-50 transition-colors uppercase tracking-wide">
+                {/* View Details Button */}
+                {/* CHANGE 5: Hover gives a soft green background tint */}
+                <button className="flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-xl border border-gray-200 text-sm font-bold text-gray-900 hover:bg-green-50 hover:text-green-700 hover:border-green-200 transition-colors uppercase tracking-wide">
                   View Details
                   <ArrowUpRight size={18} />
                 </button>

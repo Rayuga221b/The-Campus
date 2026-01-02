@@ -5,6 +5,7 @@ import CategorySlider from './components/home/CategorySlider';
 import TrendingProducts from './components/home/TrendingProducts';
 import FeaturesSection from './components/home/FeatureSection';
 import AnimatedShowcase from './components/home/AnimationShowcase';
+import Footer from './components/layout/footer';
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
         <AnimatedShowcase />
 
         <FeaturesSection />
+
+        <Footer />
 
       </main>
     </div>
